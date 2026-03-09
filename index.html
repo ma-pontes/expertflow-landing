@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ExpertFlow — Gestão Inteligente de Perícias Trabalhistas</title>
-  <meta name="description" content="ExpertFlow automatiza a extração de dados de processos do PJe via IA, gerencia prazos e gera checklists periciais em segundos. O copiloto do perito judicial moderno." />
-  <meta name="keywords" content="perito judicial, perícia trabalhista, gestão de processos, PJe, IA, checklist pericial, laudo pericial" />
+  <meta name="description"
+    content="ExpertFlow automatiza a extração de dados de processos do PJe via IA, gerencia prazos e gera checklists periciais em segundos. O copiloto do perito judicial moderno." />
+  <meta name="keywords"
+    content="perito judicial, perícia trabalhista, gestão de processos, PJe, IA, checklist pericial, laudo pericial" />
   <meta property="og:title" content="ExpertFlow — Gestão Inteligente de Perícias Trabalhistas" />
-  <meta property="og:description" content="Elimine o trabalho manual de triagem de processos. A IA lê o PDF do PJe e extrai todos os dados em segundos." />
+  <meta property="og:description"
+    content="Elimine o trabalho manual de triagem de processos. A IA lê o PDF do PJe e extrai todos os dados em segundos." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><polygon points='55,10 20,55 50,55 45,90 80,45 50,45' fill='white'/></svg>">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ===== NAVBAR ===== -->
@@ -21,8 +29,9 @@
     <div class="nav-container">
       <a href="#" class="nav-logo" aria-label="ExpertFlow Home">
         <div class="logo-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
           </svg>
         </div>
         <span class="logo-text">Expert<strong>Flow</strong></span>
@@ -64,22 +73,30 @@
           Powered by Google Gemini AI
         </div>
         <h1 class="hero-title">
-          A <span class="gradient-text">IA</span> que lê seus<br/>
-          processos do PJe<br/>
+          A <span class="gradient-text">IA</span> que lê seus<br />
+          processos do PJe<br />
           por você.
         </h1>
         <p class="hero-subtitle">
-          ExpertFlow extrai automaticamente todos os dados de PDFs do PJe, 
-          controla seus prazos com alertas inteligentes e gera checklists periciais 
+          ExpertFlow extrai automaticamente todos os dados de PDFs do PJe,
+          controla seus prazos com alertas inteligentes e gera checklists periciais
           prontos em segundos — para você focar no que importa: <strong>a perícia.</strong>
         </p>
         <div class="hero-actions">
           <a href="#" class="btn btn-primary btn-xl" id="hero-cta">
             Começar Gratuitamente
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
           </a>
           <a href="#how-it-works" class="btn btn-outline btn-xl">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polygon points="10 8 16 12 10 16 10 8" />
+            </svg>
             Ver demonstração
           </a>
         </div>
@@ -166,11 +183,19 @@
         </div>
         <!-- Floating chip: AI results -->
         <div class="float-chip chip-top">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
           <span>Extração concluída em <strong>42s</strong></span>
         </div>
         <div class="float-chip chip-bottom">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
           <span>Checklist <strong>.docx</strong> gerado</span>
         </div>
       </div>
@@ -183,23 +208,37 @@
       <p class="trust-label">Tecnologia de ponta para peritos modernos</p>
       <div class="trust-logos">
         <div class="trust-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          </svg>
           <span>Supabase</span>
         </div>
         <div class="trust-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
           <span>Google Gemini</span>
         </div>
         <div class="trust-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
           <span>React + TypeScript</span>
         </div>
         <div class="trust-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
           <span>Dados Seguros</span>
         </div>
         <div class="trust-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+          </svg>
           <span>Vercel Hosting</span>
         </div>
       </div>
@@ -280,67 +319,114 @@
 
         <div class="feature-card feature-primary">
           <div class="feature-icon-wrap icon-orange">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
           </div>
           <h3>Extração por IA</h3>
-          <p>Google Gemini lê o PDF do PJe e extrai número do processo, vara, comarca, juiz, partes, prazo do laudo e quesitos da perícia automaticamente.</p>
+          <p>Google Gemini lê o PDF do PJe e extrai número do processo, vara, comarca, juiz, partes, prazo do laudo e
+            quesitos da perícia automaticamente.</p>
           <div class="feature-tag">Powered by Gemini</div>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-blue">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
           </div>
           <h3>Upload com Drag & Drop</h3>
-          <p>Arraste o PDF do processo para a tela ou importe direto do Google Drive. Suporta arquivos de até 200 MB com otimização automática.</p>
+          <p>Arraste o PDF do processo para a tela ou importe direto do Google Drive. Suporta arquivos de até 200 MB com
+            otimização automática.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-violet">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
           </div>
           <h3>Controle de Prazos</h3>
-          <p>Dashboard com calendário visual de prazos, alertas de urgência para processos com menos de 10 dias úteis e indicadores em tempo real.</p>
+          <p>Dashboard com calendário visual de prazos, alertas de urgência para processos com menos de 10 dias úteis e
+            indicadores em tempo real.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-green">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
           </div>
           <h3>Geração de Checklist .docx</h3>
-          <p>Gera automaticamente o checklist pericial em Word (.docx) com todos os dados do processo, tabela de medições de agentes e observações do perito.</p>
+          <p>Gera automaticamente o checklist pericial em Word (.docx) com todos os dados do processo, tabela de
+            medições de agentes e observações do perito.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-amber">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
           </div>
           <h3>Timeline Visual de Etapas</h3>
-          <p>Acompanhe cada processo pelo pipeline de 6 etapas: Entrada → Agendamento → Perícia → Laudo → Decisão → Pagamento.</p>
+          <p>Acompanhe cada processo pelo pipeline de 6 etapas: Entrada → Agendamento → Perícia → Laudo → Decisão →
+            Pagamento.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-red">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
           </div>
           <h3>Detecção de Duplicatas</h3>
-          <p>O sistema detecta automaticamente processos duplicados antes do upload, evitando retrabalho e confusão na gestão dos casos.</p>
+          <p>O sistema detecta automaticamente processos duplicados antes do upload, evitando retrabalho e confusão na
+            gestão dos casos.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-teal">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
           </div>
           <h3>Atualizações em Tempo Real</h3>
-          <p>Supabase Realtime mantém todas as informações atualizadas instantaneamente, sem necessidade de recarregar a página.</p>
+          <p>Supabase Realtime mantém todas as informações atualizadas instantaneamente, sem necessidade de recarregar a
+            página.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-wrap icon-indigo">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
           </div>
           <h3>Dados Seguros & Isolados</h3>
-          <p>Autenticação JWT via Supabase Auth, dados isolados por usuário e PDFs armazenados com URLs temporárias assinadas.</p>
+          <p>Autenticação JWT via Supabase Auth, dados isolados por usuário e PDFs armazenados com URLs temporárias
+            assinadas.</p>
         </div>
 
       </div>
@@ -353,7 +439,8 @@
       <div class="section-header">
         <div class="section-label label-orange">Como Funciona</div>
         <h2 class="section-title">De 0 a processo organizado em 4 passos</h2>
-        <p class="section-subtitle">Simples o suficiente para qualquer perito, poderoso o suficiente para escritórios inteiros.</p>
+        <p class="section-subtitle">Simples o suficiente para qualquer perito, poderoso o suficiente para escritórios
+          inteiros.</p>
       </div>
       <div class="steps-container">
         <div class="step-line"></div>
@@ -363,10 +450,16 @@
             <div class="step-number">01</div>
             <div class="step-content">
               <div class="step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="17 8 12 3 7 8" />
+                  <line x1="12" y1="3" x2="12" y2="15" />
+                </svg>
               </div>
               <h3>Envie o PDF do PJe</h3>
-              <p>Arraste e solte o PDF do processo ou importe do Google Drive. O sistema otimiza automaticamente arquivos grandes.</p>
+              <p>Arraste e solte o PDF do processo ou importe do Google Drive. O sistema otimiza automaticamente
+                arquivos grandes.</p>
             </div>
           </div>
 
@@ -374,10 +467,14 @@
             <div class="step-number">02</div>
             <div class="step-content">
               <div class="step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
               </div>
               <h3>IA extrai os dados</h3>
-              <p>Google Gemini analisa o documento e extrai em segundos: número, vara, partes, prazo do laudo e todos os quesitos da perícia.</p>
+              <p>Google Gemini analisa o documento e extrai em segundos: número, vara, partes, prazo do laudo e todos os
+                quesitos da perícia.</p>
             </div>
           </div>
 
@@ -385,10 +482,15 @@
             <div class="step-number">03</div>
             <div class="step-content">
               <div class="step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
               </div>
               <h3>Revise e gerencie</h3>
-              <p>Confira os dados extraídos, corrija se necessário, agende a visita e acompanhe a evolução do processo com a timeline visual.</p>
+              <p>Confira os dados extraídos, corrija se necessário, agende a visita e acompanhe a evolução do processo
+                com a timeline visual.</p>
             </div>
           </div>
 
@@ -396,10 +498,17 @@
             <div class="step-number">04</div>
             <div class="step-content">
               <div class="step-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                </svg>
               </div>
               <h3>Gere o Checklist</h3>
-              <p>Com um clique, gere o checklist pericial completo em Word (.docx) com dados do processo, agentes de insalubridade e suas observações.</p>
+              <p>Com um clique, gere o checklist pericial completo em Word (.docx) com dados do processo, agentes de
+                insalubridade e suas observações.</p>
             </div>
           </div>
 
@@ -508,7 +617,8 @@
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"Antes eu gastava 2 horas organizando cada processo novo. Com o ExpertFlow, em menos de 1 minuto já tenho todos os dados extraídos e o processo catalogado."</p>
+          <p class="testimonial-text">"Antes eu gastava 2 horas organizando cada processo novo. Com o ExpertFlow, em
+            menos de 1 minuto já tenho todos os dados extraídos e o processo catalogado."</p>
           <div class="testimonial-author">
             <div class="author-avatar">JP</div>
             <div>
@@ -519,7 +629,8 @@
         </div>
         <div class="testimonial-card testimonial-featured">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"O controle de prazos mudou minha rotina completamente. Saber visualmente quais processos são urgentes me permite priorizar sem estresse. Nunca mais perdi um prazo."</p>
+          <p class="testimonial-text">"O controle de prazos mudou minha rotina completamente. Saber visualmente quais
+            processos são urgentes me permite priorizar sem estresse. Nunca mais perdi um prazo."</p>
           <div class="testimonial-author">
             <div class="author-avatar av-featured">ML</div>
             <div>
@@ -530,7 +641,8 @@
         </div>
         <div class="testimonial-card">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"A geração automática do checklist em Word economiza pelo menos 30 minutos por visita técnica. O template já vem preenchido com os dados do processo."</p>
+          <p class="testimonial-text">"A geração automática do checklist em Word economiza pelo menos 30 minutos por
+            visita técnica. O template já vem preenchido com os dados do processo."</p>
           <div class="testimonial-author">
             <div class="author-avatar">RC</div>
             <div>
@@ -629,7 +741,11 @@
           <div class="cta-actions">
             <a href="#" class="btn btn-white btn-xl">
               Criar conta gratuita
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
             </a>
             <a href="#" class="btn btn-outline-white btn-xl">Agendar demonstração</a>
           </div>
@@ -651,50 +767,76 @@
         <div class="faq-item" id="faq-1">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
             <span>A IA consegue ler qualquer PDF do PJe?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </button>
           <div class="faq-answer" id="faq-answer-1" role="region">
-            <p>Sim. O ExpertFlow foi desenvolvido especificamente para os PDFs do PJe (Processo Judicial Eletrônico). A IA do Google Gemini tem mais de 90% de taxa de sucesso na extração dos campos obrigatórios. Para arquivos com mais de 170 páginas, o sistema otimiza automaticamente, preservando as partes mais relevantes do documento.</p>
+            <p>Sim. O ExpertFlow foi desenvolvido especificamente para os PDFs do PJe (Processo Judicial Eletrônico). A
+              IA do Google Gemini tem mais de 90% de taxa de sucesso na extração dos campos obrigatórios. Para arquivos
+              com mais de 170 páginas, o sistema otimiza automaticamente, preservando as partes mais relevantes do
+              documento.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq-2">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
             <span>Meus dados e PDFs são seguros?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </button>
           <div class="faq-answer" id="faq-answer-2" role="region">
-            <p>Totalmente. Utilizamos o Supabase com autenticação JWT e seus dados são completamente isolados dos de outros usuários. Os PDFs são armazenados com caminhos únicos por usuário e acessados apenas via URLs temporárias assinadas (válidas por 60 segundos), impedindo acesso não autorizado.</p>
+            <p>Totalmente. Utilizamos o Supabase com autenticação JWT e seus dados são completamente isolados dos de
+              outros usuários. Os PDFs são armazenados com caminhos únicos por usuário e acessados apenas via URLs
+              temporárias assinadas (válidas por 60 segundos), impedindo acesso não autorizado.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq-3">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
             <span>O checklist gerado é compatível com Word?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </button>
           <div class="faq-answer" id="faq-answer-3" role="region">
-            <p>Sim! O checklist é gerado em formato .docx nativo, completamente compatível com Microsoft Word e LibreOffice. O arquivo já vem preenchido com os dados do processo, a tabela de medições de agentes (ruído, calor, vibração, etc.) e suas observações técnicas — pronto para editar e imprimir.</p>
+            <p>Sim! O checklist é gerado em formato .docx nativo, completamente compatível com Microsoft Word e
+              LibreOffice. O arquivo já vem preenchido com os dados do processo, a tabela de medições de agentes (ruído,
+              calor, vibração, etc.) e suas observações técnicas — pronto para editar e imprimir.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq-4">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
             <span>Preciso instalar algum programa?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </button>
           <div class="faq-answer" id="faq-answer-4" role="region">
-            <p>Não. O ExpertFlow é 100% web — funciona no navegador, sem instalação de nada. Toda a geração do checklist em Word também acontece direto no browser, sem precisar de servidor adicional.</p>
+            <p>Não. O ExpertFlow é 100% web — funciona no navegador, sem instalação de nada. Toda a geração do checklist
+              em Word também acontece direto no browser, sem precisar de servidor adicional.</p>
           </div>
         </div>
 
         <div class="faq-item" id="faq-5">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
             <span>Funciona para qualquer tipo de perícia trabalhista?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </button>
           <div class="faq-answer" id="faq-answer-5" role="region">
-            <p>O ExpertFlow foi desenvolvido para peritos de medicina e segurança do trabalho que atuam em varas trabalhistas no Brasil. O sistema reconhece tanto quesitos de insalubridade quanto de periculosidade, e a tabela de medições inclui os 10 principais agentes: Ruído, Calor, Vibração, Iluminação, Umidade, Poeiras, Fumos, Névoas, Gases e Vapores.</p>
+            <p>O ExpertFlow foi desenvolvido para peritos de medicina e segurança do trabalho que atuam em varas
+              trabalhistas no Brasil. O sistema reconhece tanto quesitos de insalubridade quanto de periculosidade, e a
+              tabela de medições inclui os 10 principais agentes: Ruído, Calor, Vibração, Iluminação, Umidade, Poeiras,
+              Fumos, Névoas, Gases e Vapores.</p>
           </div>
         </div>
 
@@ -709,13 +851,15 @@
         <div class="footer-brand">
           <a href="#" class="nav-logo">
             <div class="logo-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
               </svg>
             </div>
             <span class="logo-text">Expert<strong>Flow</strong></span>
           </a>
-          <p class="footer-tagline">A plataforma de gestão de processos periciais trabalhistas para o perito judicial moderno.</p>
+          <p class="footer-tagline">A plataforma de gestão de processos periciais trabalhistas para o perito judicial
+            moderno.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
@@ -755,4 +899,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
