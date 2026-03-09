@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExpertFlow — Gestão Inteligente de Perícias Trabalhistas</title>
+  <meta name="description" content="ExpertFlow automatiza a extração de dados de processos do PJe via IA, gerencia prazos e gera checklists periciais em segundos. O copiloto do perito judicial moderno." />
+  <meta name="keywords" content="perito judicial, perícia trabalhista, gestão de processos, PJe, IA, checklist pericial, laudo pericial" />
+  <meta property="og:title" content="ExpertFlow — Gestão Inteligente de Perícias Trabalhistas" />
+  <meta property="og:description" content="Elimine o trabalho manual de triagem de processos. A IA lê o PDF do PJe e extrai todos os dados em segundos." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="ExpertFlow Home">
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <span class="logo-text">Expert<strong>Flow</strong></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+        <li><a href="#how-it-works" class="nav-link">Como Funciona</a></li>
+        <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+        <li><a href="#pricing" class="nav-link">Preços</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost" id="login-btn">Entrar</a>
+        <a href="#" class="btn btn-primary" id="cta-nav-btn">Começar Grátis</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="navigation">
+      <a href="#features">Funcionalidades</a>
+      <a href="#how-it-works">Como Funciona</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#pricing">Preços</a>
+      <a href="#" class="btn btn-primary full-width">Começar Grátis</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Powered by Google Gemini AI
+        </div>
+        <h1 class="hero-title">
+          A <span class="gradient-text">IA</span> que lê seus<br/>
+          processos do PJe<br/>
+          por você.
+        </h1>
+        <p class="hero-subtitle">
+          ExpertFlow extrai automaticamente todos os dados de PDFs do PJe, 
+          controla seus prazos com alertas inteligentes e gera checklists periciais 
+          prontos em segundos — para você focar no que importa: <strong>a perícia.</strong>
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-xl" id="hero-cta">
+            Começar Gratuitamente
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#how-it-works" class="btn btn-outline btn-xl">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Ver demonstração
+          </a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="proof-avatars">
+            <div class="avatar av1">JP</div>
+            <div class="avatar av2">ML</div>
+            <div class="avatar av3">SF</div>
+            <div class="avatar av4">RC</div>
+          </div>
+          <p class="proof-text">
+            <strong>Peritos judiciais</strong> já economizam horas por processo
+          </p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-preview">
+          <div class="preview-header">
+            <div class="preview-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="preview-title">ExpertFlow — Dashboard</span>
+          </div>
+          <div class="preview-body">
+            <!-- Stat Cards Row -->
+            <div class="preview-stats">
+              <div class="stat-card stat-blue">
+                <div class="stat-icon">📁</div>
+                <div>
+                  <div class="stat-number">24</div>
+                  <div class="stat-label">Processos ativos</div>
+                </div>
+              </div>
+              <div class="stat-card stat-red">
+                <div class="stat-icon">⚠️</div>
+                <div>
+                  <div class="stat-number">3</div>
+                  <div class="stat-label">Prazo urgente</div>
+                </div>
+              </div>
+              <div class="stat-card stat-green">
+                <div class="stat-icon">✅</div>
+                <div>
+                  <div class="stat-number">12</div>
+                  <div class="stat-label">Este mês</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Process List -->
+            <div class="preview-processes">
+              <div class="process-row process-urgent">
+                <div class="process-info">
+                  <span class="process-num">0001234-56.2024</span>
+                  <span class="process-name">João da Silva × Construtech</span>
+                </div>
+                <div class="process-badge badge-red">3 dias</div>
+              </div>
+              <div class="process-row">
+                <div class="process-info">
+                  <span class="process-num">0007890-12.2024</span>
+                  <span class="process-name">Maria Santos × AutoPeças Ltda</span>
+                </div>
+                <div class="process-badge badge-amber">8 dias</div>
+              </div>
+              <div class="process-row">
+                <div class="process-info">
+                  <span class="process-num">0005678-90.2024</span>
+                  <span class="process-name">Pedro Alves × Metalúrgica RS</span>
+                </div>
+                <div class="process-badge badge-green">21 dias</div>
+              </div>
+            </div>
+
+            <!-- AI Extraction Banner -->
+            <div class="preview-ai-banner">
+              <div class="ai-spinner"></div>
+              <span>IA extraindo dados do PDF <strong>processo_0009.pdf</strong>…</span>
+              <span class="ai-progress">73%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Floating chip: AI results -->
+        <div class="float-chip chip-top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span>Extração concluída em <strong>42s</strong></span>
+        </div>
+        <div class="float-chip chip-bottom">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Checklist <strong>.docx</strong> gerado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGOS / TRUST BAR ===== -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-label">Tecnologia de ponta para peritos modernos</p>
+      <div class="trust-logos">
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <span>Supabase</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span>Google Gemini</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>React + TypeScript</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Dados Seguros</span>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          <span>Vercel Hosting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM / SOLUTION ===== -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-col">
+          <div class="section-label label-red">O Problema</div>
+          <h2 class="section-title">Horas perdidas lendo PDF atrás de PDF</h2>
+          <div class="problem-list">
+            <div class="problem-item">
+              <div class="problem-icon">📄</div>
+              <div>
+                <h4>PDFs do PJe com 400+ páginas</h4>
+                <p>Leitura manual para extrair dados básicos: número, vara, partes, prazos e quesitos.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon">🗓️</div>
+              <div>
+                <h4>Controle de prazos em planilhas</h4>
+                <p>Risco real de perder prazos fatais em varas trabalhistas — com consequências graves.</p>
+              </div>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon">📋</div>
+              <div>
+                <h4>Checklists criados do zero</h4>
+                <p>Retrabalho repetitivo a cada novo processo, do zero ou editando modelos de Word.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solution-col">
+          <div class="section-label label-orange">A Solução</div>
+          <h2 class="section-title">ExpertFlow automatiza tudo isso por você</h2>
+          <div class="solution-list">
+            <div class="solution-item">
+              <div class="solution-check">✓</div>
+              <div>
+                <h4>IA extrai dados em menos de 60 segundos</h4>
+                <p>Envie o PDF e a IA do Gemini identifica todos os campos: número, vara, partes, prazo e quesitos.</p>
+              </div>
+            </div>
+            <div class="solution-item">
+              <div class="solution-check">✓</div>
+              <div>
+                <h4>Alertas automáticos de urgência</h4>
+                <p>Processos com menos de 10 dias úteis ficam destacados em vermelho no dashboard.</p>
+              </div>
+            </div>
+            <div class="solution-item">
+              <div class="solution-check">✓</div>
+              <div>
+                <h4>Checklist .docx em um clique</h4>
+                <p>Gera automaticamente o checklist pericial com dados do processo, medições e observações.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label label-orange">Funcionalidades</div>
+        <h2 class="section-title">Tudo que o perito precisa, num só lugar</h2>
+        <p class="section-subtitle">Do recebimento do processo até o pagamento dos honorários.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card feature-primary">
+          <div class="feature-icon-wrap icon-orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Extração por IA</h3>
+          <p>Google Gemini lê o PDF do PJe e extrai número do processo, vara, comarca, juiz, partes, prazo do laudo e quesitos da perícia automaticamente.</p>
+          <div class="feature-tag">Powered by Gemini</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3>Upload com Drag & Drop</h3>
+          <p>Arraste o PDF do processo para a tela ou importe direto do Google Drive. Suporta arquivos de até 200 MB com otimização automática.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-violet">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Controle de Prazos</h3>
+          <p>Dashboard com calendário visual de prazos, alertas de urgência para processos com menos de 10 dias úteis e indicadores em tempo real.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Geração de Checklist .docx</h3>
+          <p>Gera automaticamente o checklist pericial em Word (.docx) com todos os dados do processo, tabela de medições de agentes e observações do perito.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-amber">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Timeline Visual de Etapas</h3>
+          <p>Acompanhe cada processo pelo pipeline de 6 etapas: Entrada → Agendamento → Perícia → Laudo → Decisão → Pagamento.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-red">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Detecção de Duplicatas</h3>
+          <p>O sistema detecta automaticamente processos duplicados antes do upload, evitando retrabalho e confusão na gestão dos casos.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Atualizações em Tempo Real</h3>
+          <p>Supabase Realtime mantém todas as informações atualizadas instantaneamente, sem necessidade de recarregar a página.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap icon-indigo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Dados Seguros & Isolados</h3>
+          <p>Autenticação JWT via Supabase Auth, dados isolados por usuário e PDFs armazenados com URLs temporárias assinadas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label label-orange">Como Funciona</div>
+        <h2 class="section-title">De 0 a processo organizado em 4 passos</h2>
+        <p class="section-subtitle">Simples o suficiente para qualquer perito, poderoso o suficiente para escritórios inteiros.</p>
+      </div>
+      <div class="steps-container">
+        <div class="step-line"></div>
+        <div class="steps-grid">
+
+          <div class="step-item" data-step="1">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              </div>
+              <h3>Envie o PDF do PJe</h3>
+              <p>Arraste e solte o PDF do processo ou importe do Google Drive. O sistema otimiza automaticamente arquivos grandes.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="2">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <h3>IA extrai os dados</h3>
+              <p>Google Gemini analisa o documento e extrai em segundos: número, vara, partes, prazo do laudo e todos os quesitos da perícia.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="3">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              </div>
+              <h3>Revise e gerencie</h3>
+              <p>Confira os dados extraídos, corrija se necessário, agende a visita e acompanhe a evolução do processo com a timeline visual.</p>
+            </div>
+          </div>
+
+          <div class="step-item" data-step="4">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <div class="step-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <h3>Gere o Checklist</h3>
+              <p>Com um clique, gere o checklist pericial completo em Word (.docx) com dados do processo, agentes de insalubridade e suas observações.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PIPELINE ===== -->
+  <section class="pipeline-section" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label label-orange">Pipeline do Processo</div>
+        <h2 class="section-title">6 etapas que espelham a perícia real</h2>
+        <p class="section-subtitle">Do PDF recebido até o pagamento dos honorários, tudo rastreado e visível.</p>
+      </div>
+      <div class="pipeline-track">
+        <div class="pipeline-step ps-blue">
+          <div class="ps-icon">📥</div>
+          <div class="ps-number">01</div>
+          <div class="ps-name">Entrada</div>
+          <div class="ps-desc">PDF recebido, dados extraídos pela IA</div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step ps-violet">
+          <div class="ps-icon">🗓️</div>
+          <div class="ps-number">02</div>
+          <div class="ps-name">Agendamento</div>
+          <div class="ps-desc">Data e hora da visita técnica definidas</div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step ps-amber">
+          <div class="ps-icon">🔍</div>
+          <div class="ps-number">03</div>
+          <div class="ps-name">Perícia Técnica</div>
+          <div class="ps-desc">Visita ao local realizada</div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step ps-orange">
+          <div class="ps-icon">✍️</div>
+          <div class="ps-number">04</div>
+          <div class="ps-name">Elaboração do Laudo</div>
+          <div class="ps-desc">Perito redigindo o documento</div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step ps-yellow">
+          <div class="ps-icon">⚖️</div>
+          <div class="ps-number">05</div>
+          <div class="ps-name">Aguard. Decisão</div>
+          <div class="ps-desc">Laudo entregue, aguardando o juiz</div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step ps-green">
+          <div class="ps-icon">💰</div>
+          <div class="ps-number">06</div>
+          <div class="ps-name">Pagamento</div>
+          <div class="ps-desc">Honorários pagos — processo encerrado</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICS ===== -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-value">
+            <span class="metric-num" data-target="60">0</span><span class="metric-unit">s</span>
+          </div>
+          <div class="metric-label">Tempo médio de extração por processo</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-value">
+            <span class="metric-num" data-target="90">0</span><span class="metric-unit">%+</span>
+          </div>
+          <div class="metric-label">Taxa de sucesso na extração pela IA</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-value">
+            <span class="metric-num" data-target="23">0</span>
+            <span class="metric-unit"> funcionalidades</span>
+          </div>
+          <div class="metric-label">Implementadas no MVP atual</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-value">
+            <span class="metric-num" data-target="100">0</span><span class="metric-unit">%</span>
+          </div>
+          <div class="metric-label">Alertas para prazos críticos (&lt;10 dias úteis)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label label-orange">Depoimentos</div>
+        <h2 class="section-title">O que os peritos dizem</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Antes eu gastava 2 horas organizando cada processo novo. Com o ExpertFlow, em menos de 1 minuto já tenho todos os dados extraídos e o processo catalogado."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JP</div>
+            <div>
+              <div class="author-name">Dr. João Paulo M.</div>
+              <div class="author-role">Perito Judicial — Vara Trabalhista São Paulo</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-featured">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"O controle de prazos mudou minha rotina completamente. Saber visualmente quais processos são urgentes me permite priorizar sem estresse. Nunca mais perdi um prazo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar av-featured">ML</div>
+            <div>
+              <div class="author-name">Dra. Marina L.</div>
+              <div class="author-role">Perita em Segurança do Trabalho — RS</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"A geração automática do checklist em Word economiza pelo menos 30 minutos por visita técnica. O template já vem preenchido com os dados do processo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RC</div>
+            <div>
+              <div class="author-name">Eng. Roberto C.</div>
+              <div class="author-role">Perito Judicial — Medicina e Segurança do Trabalho</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label label-orange">Preços</div>
+        <h2 class="section-title">Simples e transparente</h2>
+        <p class="section-subtitle">Comece grátis, sem precisar de cartão de crédito.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-plan">Starter</div>
+          <div class="pricing-price">
+            <span class="price-currency">R$</span>
+            <span class="price-value">0</span>
+            <span class="price-period">/mês</span>
+          </div>
+          <div class="pricing-desc">Para peritos iniciando com o sistema</div>
+          <ul class="pricing-features">
+            <li><span class="feat-check">✓</span> Até 10 processos simultâneos</li>
+            <li><span class="feat-check">✓</span> Extração por IA (limitada)</li>
+            <li><span class="feat-check">✓</span> Dashboard e calendário</li>
+            <li><span class="feat-check">✓</span> Geração de checklist</li>
+            <li><span class="feat-x">✗</span> Suporte prioritário</li>
+            <li><span class="feat-x">✗</span> Google Drive import</li>
+          </ul>
+          <a href="#" class="btn btn-outline pricing-btn">Começar Grátis</a>
+        </div>
+
+        <div class="pricing-card pricing-popular">
+          <div class="popular-badge">Mais popular</div>
+          <div class="pricing-plan">Pro</div>
+          <div class="pricing-price">
+            <span class="price-currency">R$</span>
+            <span class="price-value">97</span>
+            <span class="price-period">/mês</span>
+          </div>
+          <div class="pricing-desc">Para peritos com volume regular de processos</div>
+          <ul class="pricing-features">
+            <li><span class="feat-check">✓</span> Processos ilimitados</li>
+            <li><span class="feat-check">✓</span> Extração por IA completa</li>
+            <li><span class="feat-check">✓</span> Google Drive import</li>
+            <li><span class="feat-check">✓</span> Alertas de urgência</li>
+            <li><span class="feat-check">✓</span> Timeline visual de etapas</li>
+            <li><span class="feat-check">✓</span> Suporte por e-mail</li>
+          </ul>
+          <a href="#" class="btn btn-primary pricing-btn">Assinar Agora</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-plan">Escritório</div>
+          <div class="pricing-price">
+            <span class="price-currency">R$</span>
+            <span class="price-value">247</span>
+            <span class="price-period">/mês</span>
+          </div>
+          <div class="pricing-desc">Para escritórios com múltiplos peritos</div>
+          <ul class="pricing-features">
+            <li><span class="feat-check">✓</span> Tudo do plano Pro</li>
+            <li><span class="feat-check">✓</span> Até 5 usuários</li>
+            <li><span class="feat-check">✓</span> Templates customizáveis</li>
+            <li><span class="feat-check">✓</span> Relatório de produtividade</li>
+            <li><span class="feat-check">✓</span> Exportação CSV/Excel</li>
+            <li><span class="feat-check">✓</span> Suporte prioritário</li>
+          </ul>
+          <a href="#" class="btn btn-outline pricing-btn">Falar com Vendas</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-orbs">
+          <div class="cta-orb cta-orb-1"></div>
+          <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="cta-content">
+          <h2>Pronto para eliminar o retrabalho?</h2>
+          <p>Junte-se aos peritos que já automatizaram sua gestão de processos. Comece grátis hoje.</p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-white btn-xl">
+              Criar conta gratuita
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn btn-outline-white btn-xl">Agendar demonstração</a>
+          </div>
+          <p class="cta-note">Sem cartão de crédito · Cancele quando quiser</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label label-orange">FAQ</div>
+        <h2 class="section-title">Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            <span>A IA consegue ler qualquer PDF do PJe?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-1" role="region">
+            <p>Sim. O ExpertFlow foi desenvolvido especificamente para os PDFs do PJe (Processo Judicial Eletrônico). A IA do Google Gemini tem mais de 90% de taxa de sucesso na extração dos campos obrigatórios. Para arquivos com mais de 170 páginas, o sistema otimiza automaticamente, preservando as partes mais relevantes do documento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            <span>Meus dados e PDFs são seguros?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-2" role="region">
+            <p>Totalmente. Utilizamos o Supabase com autenticação JWT e seus dados são completamente isolados dos de outros usuários. Os PDFs são armazenados com caminhos únicos por usuário e acessados apenas via URLs temporárias assinadas (válidas por 60 segundos), impedindo acesso não autorizado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            <span>O checklist gerado é compatível com Word?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-3" role="region">
+            <p>Sim! O checklist é gerado em formato .docx nativo, completamente compatível com Microsoft Word e LibreOffice. O arquivo já vem preenchido com os dados do processo, a tabela de medições de agentes (ruído, calor, vibração, etc.) e suas observações técnicas — pronto para editar e imprimir.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            <span>Preciso instalar algum programa?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-4" role="region">
+            <p>Não. O ExpertFlow é 100% web — funciona no navegador, sem instalação de nada. Toda a geração do checklist em Word também acontece direto no browser, sem precisar de servidor adicional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            <span>Funciona para qualquer tipo de perícia trabalhista?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-answer-5" role="region">
+            <p>O ExpertFlow foi desenvolvido para peritos de medicina e segurança do trabalho que atuam em varas trabalhistas no Brasil. O sistema reconhece tanto quesitos de insalubridade quanto de periculosidade, e a tabela de medições inclui os 10 principais agentes: Ruído, Calor, Vibração, Iluminação, Umidade, Poeiras, Fumos, Névoas, Gases e Vapores.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <span class="logo-text">Expert<strong>Flow</strong></span>
+          </a>
+          <p class="footer-tagline">A plataforma de gestão de processos periciais trabalhistas para o perito judicial moderno.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Produto</h4>
+            <ul>
+              <li><a href="#features">Funcionalidades</a></li>
+              <li><a href="#pipeline">Pipeline</a></li>
+              <li><a href="#pricing">Preços</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Tecnologia</h4>
+            <ul>
+              <li><a href="#">Google Gemini AI</a></li>
+              <li><a href="#">Supabase</a></li>
+              <li><a href="#">React + TypeScript</a></li>
+              <li><a href="#">Vercel</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Termos de Uso</a></li>
+              <li><a href="#">LGPD</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ExpertFlow. Todos os direitos reservados.</p>
+        <p class="footer-made">Feito para peritos judiciais brasileiros 🇧🇷</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
