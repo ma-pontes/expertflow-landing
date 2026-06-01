@@ -1,9 +1,10 @@
 ---
 import '../styles/global.css';
 
-const APP_URL = 'https://expertum.app';
+const APP_URL = 'https://app.expertum.app';
 const LOGIN_URL = `${APP_URL}/login`;
 const SIGNUP_URL = LOGIN_URL;
+const ASSINATURA_URL = `${APP_URL}/assinatura`;
 
 const features = [
   {
@@ -103,55 +104,58 @@ const aiFeatures = [
 
 const plans = [
   {
-    name: 'Starter',
-    price: 'Grátis',
-    period: '',
-    desc: 'Para conhecer a plataforma',
+    name: 'Essencial',
+    price: 'R$ 149',
+    period: '/mês',
+    desc: 'Para quem está começando',
     highlight: false,
     features: [
-      '3 processos ativos',
-      'Extração por IA (3 por mês)',
-      'Checklist de campo gerado',
-      'Pipeline de etapas',
-      'Controle de prazos',
+      'Extração automática de processos',
+      'Quesitos via PDF',
+      'Checklist de campo em PDF',
+      'Dashboard financeiro completo',
+      'Histórico ilimitado de processos',
+      'Suporte por e-mail (48h)',
     ],
-    cta: 'Começar grátis',
-    href: SIGNUP_URL,
+    cta: 'Assinar Essencial',
+    href: ASSINATURA_URL,
   },
   {
-    name: 'Pro',
-    price: 'R$ 97',
+    name: 'Profissional',
+    price: 'R$ 249',
     period: '/mês',
     desc: 'Para o perito que quer escalar',
     highlight: true,
+    badge: 'Mais escolhido',
     features: [
-      'Processos ilimitados',
-      'Extração IA ilimitada',
+      'Tudo do Essencial',
+      'Checklist em Word (.docx)',
       'Pré-laudo com IA',
-      'Respostas a impugnações',
-      'Extração de sentença',
-      'Roterizador completo',
-      'Financeiro completo',
-      'Suporte prioritário',
+      'Extração de sentença e honorários',
+      'Respostas a impugnações por IA',
+      'Roterizador semanal',
+      'Créditos extras com 25% de desconto',
+      'Suporte prioritário (24h)',
     ],
-    cta: 'Assinar Pro',
-    href: SIGNUP_URL,
+    cta: 'Assinar Profissional',
+    href: ASSINATURA_URL,
   },
   {
-    name: 'Escritório',
-    price: 'R$ 247',
+    name: 'Premium',
+    price: 'R$ 699',
     period: '/mês',
-    desc: 'Para equipes e escritórios periciais',
+    desc: 'Para escritórios periciais',
     highlight: false,
     features: [
-      'Tudo do Pro',
-      'Até 5 peritos',
-      'Dashboard consolidado',
-      'Gestão de equipe',
-      'Onboarding dedicado',
+      'Tudo do Profissional',
+      'Créditos ilimitados inclusos',
+      'Fair use: 100 perícias/mês',
+      'Acesso antecipado a novas features',
+      'Suporte via WhatsApp (4h)',
+      'Previsibilidade total de custo',
     ],
-    cta: 'Falar com o time',
-    href: SIGNUP_URL,
+    cta: 'Assinar Premium',
+    href: ASSINATURA_URL,
   },
 ];
 
