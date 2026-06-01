@@ -4,7 +4,7 @@ import '../styles/global.css';
 const APP_URL = 'https://app.expertum.app';
 const LOGIN_URL = `${APP_URL}/login`;
 const SIGNUP_URL = LOGIN_URL;
-const ASSINATURA_URL = `${APP_URL}/assinatura`;
+const ASSINATURA_URL = `${APP_URL}/assinatura`; // base — cada plano adiciona ?plan=xxx
 
 const features = [
   {
@@ -118,7 +118,7 @@ const plans = [
       'Suporte por e-mail (48h)',
     ],
     cta: 'Assinar Essencial',
-    href: ASSINATURA_URL,
+    href: `${ASSINATURA_URL}?plan=essencial`,
   },
   {
     name: 'Profissional',
@@ -138,7 +138,7 @@ const plans = [
       'Suporte prioritário (24h)',
     ],
     cta: 'Assinar Profissional',
-    href: ASSINATURA_URL,
+    href: `${ASSINATURA_URL}?plan=profissional`,
   },
   {
     name: 'Premium',
@@ -155,7 +155,7 @@ const plans = [
       'Previsibilidade total de custo',
     ],
     cta: 'Assinar Premium',
-    href: ASSINATURA_URL,
+    href: `${ASSINATURA_URL}?plan=premium`,
   },
 ];
 
